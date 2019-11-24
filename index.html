@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<style>
+    * {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .app-form
+    {
+        border: 1px solid  #222222;
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 100px;
+        background-color: #E6E6FA;
+    }
+    .app-content
+    {
+         padding:1rem 5rem 0;
+    }
+    .app-content label
+    {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .app-content input[type=text],
+    .app-content input[type=date]
+    {
+        width:100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border:1px solid #BEBEBE;
+        padding: 7px;
+        margin:0px;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;	
+        border-radius: 5px;
+    }
+
+    .btn
+    {
+       margin: 0 auto; 
+       display: block;
+       margin-top: 10px;
+       padding: 5px;
+    }
+
+</style>
+
+<body>
+    <div class="app-form">
+        <div class="app-content">
+            <label>Your budget for month</label>
+            <input type="text" name="" id="budgetID" placeholder="insert here....">
+        </div>
+        <div class="app-content">
+            <label>Date</label>
+            <input type="date" name="" id="dateID" placeholder="YYYY-MM-DD">
+        </div>
+        <div class="app-content">
+            <label>Must have expenses for month</label>
+            <input type="text" name="" id="expensesID" placeholder="insert here....">
+        </div>
+        <div class="app-content">
+            <label>Total price</label>
+            <input type="text" name="" id="priceID" placeholder="insert here....">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
